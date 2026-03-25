@@ -7,12 +7,28 @@ import Fastify from 'fastify'
 import cors from '@fastify/cors'
 import websocket from '@fastify/websocket'
 
-import { redisPlugin } from './plugins/redis'
-import { authPlugin } from './plugins/auth'
-import { authRoutes } from './routes/auth'
-import { userRoutes } from './routes/users'
-import { signalRoutes } from './routes/signals'
-import { wsRoutes } from './routes/ws'
+// import { redisPlugin } from './plugins/redis'
+// import { authPlugin } from './plugins/auth'
+// import { authRoutes } from './routes/auth'
+// import { userRoutes } from './routes/users'
+// import { signalRoutes } from './routes/signals'
+// import { wsRoutes } from './routes/ws'
+
+
+
+// src/server.ts
+import { redisPlugin } from './plugins/redis.js'
+import { authPlugin } from './plugins/auth.js'
+import { authRoutes } from './routes/auth.js'
+import { userRoutes } from './routes/users.js'
+import { signalRoutes } from './routes/signals.js'
+import { wsRoutes } from './routes/ws.js'
+
+
+
+
+
+
 
 const server = Fastify({
   logger: {

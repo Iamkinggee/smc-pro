@@ -1,18 +1,7 @@
 """
 api_publisher.py — Sends scored SMC signals to the Fastify API.
 
-Posts to POST /signals/internal using an internal service key.
-The API then:
-  1. Re-scores with the TypeScript confluence engine (bonus factors)
-  2. Persists to Supabase
-  3. Publishes to Redis → WebSocket broadcast
 
-This replaces direct Redis publishing from the Python engine,
-keeping all business logic and persistence in one place (the API).
-
-Environment variables:
-  API_BASE_URL      — e.g. http://localhost:3001  (or Railway URL in prod)
-  INTERNAL_API_KEY  — shared secret between engine and API
 """
 
 import asyncio

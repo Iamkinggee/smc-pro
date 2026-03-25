@@ -1,4 +1,4 @@
-// api/src/services/signal.ts
+// api/src/services/signals.ts
 
 import { computeConfluenceScore, ConfluentFactors, WeightConfig } from './confluence.js';
 import { createClient } from '@supabase/supabase-js';
