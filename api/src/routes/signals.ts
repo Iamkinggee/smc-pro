@@ -1,8 +1,10 @@
 // api/src/routes/signals.ts
 
 import { FastifyPluginAsync } from 'fastify'
-import { buildSignal } from '../services/signals'
-import type { RawEnginePayload } from '../services/signals'
+// import { buildSignal } from '../services/signals.js'
+// import type { RawEnginePayload } from '../services/signals.js'
+import { buildSignal } from '../services/signals.js'
+import type { RawEnginePayload } from '../services/signals.js'
 
 export const signalRoutes: FastifyPluginAsync = async (fastify) => {
   // GET /signals — paginated signal feed

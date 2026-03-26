@@ -7,13 +7,6 @@ import Fastify from 'fastify'
 import cors from '@fastify/cors'
 import websocket from '@fastify/websocket'
 
-// import { redisPlugin } from './plugins/redis'
-// import { authPlugin } from './plugins/auth'
-// import { authRoutes } from './routes/auth'
-// import { userRoutes } from './routes/users'
-// import { signalRoutes } from './routes/signals'
-// import { wsRoutes } from './routes/ws'
-
 
 
 // src/server.ts
